@@ -18,5 +18,5 @@ const mappedArr4 = filteredArr4.map(item => item.name + ' ' + '(' + item.age + '
 console.log(mappedArr4);
 
 const arr5 = [{product: 'Телефон', price: 50000, quantity: 1}, {product: 'Чехол', price: 1500, quantity: 2}, {product: 'Зарядное устройство', price: 2500, quantity: 1}];
-const reducedArr5 = arr5.reduce((sum, item) => sum + item.price, 0);
+const reducedArr5 = arr5.reduce((sum, item) => sum + item.price * item.quantity, 0);
 console.log(reducedArr5);
