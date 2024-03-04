@@ -16,3 +16,7 @@ const arr4 = [{name: 'Иван', age: 23}, {name: 'Мария', age: 18}, {name:
 const filteredArr4 = arr4.filter(item => item.age > 18);
 const mappedArr4 = filteredArr4.map(item => item.name + ' ' + '(' + item.age + ' лет)');
 console.log(mappedArr4);
+
+const arr5 = [{product: 'Телефон', price: 50000, quantity: 1}, {product: 'Чехол', price: 1500, quantity: 2}, {product: 'Зарядное устройство', price: 2500, quantity: 1}];
+const reducedArr5 = arr5.reduce((sum, item) => sum + item.price, 0);
+console.log(reducedArr5);
