@@ -14,3 +14,5 @@ console.log(newArr3);
 
 const arr4 = [{name: 'Иван', age: 23}, {name: 'Мария', age: 18}, {name: 'Алексей', age: 32}, {name: 'Ольга', age: 24}, {name: 'Сергей', age: 17}, {name: 'Анна', age: 21}];
 const filteredArr4 = arr4.filter(item => item.age > 18);
+const mappedArr4 = filteredArr4.map(item => item.name + ' ' + '(' + item.age + ' лет)');
+console.log(mappedArr4);
